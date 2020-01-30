@@ -12,4 +12,10 @@ class Review(core_models.TimeStampedModel):
     location = models.TextField()
     check_in = models.TextField()
     value = models.TextField()
-    user = models.ForeignKey("user.User", on_delete=models.CASCADE)
+    user = models.ForeignKey("users.User", on_delete=models.CASCADE)
+    room = models.ForeignKey("rooms.Room", on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f'{self.review}-{self.room}'
+
+
