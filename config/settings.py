@@ -39,7 +39,11 @@ DJANGO_APPS = [
 ]
 
 # 0-8-2
-PROJECT_APPS = ["reviews.apps.ReviewsConfig", "core.apps.CoreConfig", "users.apps.UsersConfig", "rooms.apps.RoomsConfig"]
+PROJECT_APPS = ["reservations.apps.ReservationsConfig",
+    "reviews.apps.ReviewsConfig", 
+    "core.apps.CoreConfig", 
+    "users.apps.UsersConfig", 
+    "rooms.apps.RoomsConfig"]
 
 
 # 1-22
